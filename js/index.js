@@ -4,3 +4,8 @@ window.onload = function(){
 
   document.getElementById("time").innerHTML = ('0' + d.getHours()).slice(-2)+":"+('0' + d.getMinutes()).slice(-2);
 };
+
+function disp()
+{
+  document.getElementById("signup").style.display = "block";
+}

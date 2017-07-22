@@ -148,6 +148,16 @@ ol,ul {
     object-fit: cover; /*cover video background */
     z-index:3;
 }
+
+#signup{
+  display: none;
+  position: absolute;
+  z-index: 90;
+  background-color: white;
+  width: 276px;
+  height: 403px;
+}
+
 #section0 .layer{
   position: absolute;
   z-index: 4;
