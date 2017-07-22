@@ -15,6 +15,13 @@ function nodisp()
   document.getElementById("signup").style.display = "none";
 };
 
+$(document).ready(function () {
+  setTimeout(function () {
+      $('#claim').hide();
+      // $('#claim').fadeOut('fast');
+  }, 5000);
+});
+
 
 function disableMute() {
   if (document.getElementById("myVideo").muted==true) {
