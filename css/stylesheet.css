@@ -16,6 +16,9 @@ a {
   text-decoration: none;
   /*color: inherit;*/
 }
+a:hover{
+  color: #ac9963;
+}
 
 h1, h2, h3, h4, h5 {
   font-family: 'Press Start 2P', cursive;
@@ -215,6 +218,10 @@ ol,ul {
   padding: 5px;
 }
 
+#signup a:hover{
+  background-color: #ac9963;
+}
+
 #section0 .layer{
   position: absolute;
   z-index: 4;
@@ -397,6 +404,9 @@ b{
   color: black;
   background-color: white;
   padding: 5px;
+}
+.achtung a:hover{
+  background-color: #ac9963;
 }
 
 footer{
