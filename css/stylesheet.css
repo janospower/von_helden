@@ -40,8 +40,8 @@ h1 {
   background-image: url("../img/topbg.png");
   background-repeat: no-repeat;
   background-position: left top;
-  -webkit-transition-duration: 1s; /* Safari */
-    transition-duration: 1s;
+  -webkit-transition-duration: 500ms; /* Safari */
+    transition-duration: 500ms;
 }
 /*#header:hover{
   background-color: black;
@@ -51,8 +51,8 @@ h1 {
   /*top: 13px;*/
   font-family: 'Press Start 2P', cursive;
   font-size: 8px;
-  -webkit-transition-duration: 1s; /* Safari */
-    transition-duration: 1s;
+  -webkit-transition-duration: 500ms; /* Safari */
+    transition-duration: 500ms;
 }
 #topinfo table{
   margin: auto;
@@ -62,8 +62,8 @@ h1 {
   width: 334px;
   top: 85px;
   position: relative;
-  -webkit-transition-duration: 1s; /* Safari */
-    transition-duration: 1s;
+  -webkit-transition-duration: 500ms; /* Safari */
+    transition-duration: 500ms;
 }
 
 #claim {
@@ -277,6 +277,8 @@ video::-webkit-media-controls {
 }
 .foto{
   bottom: 0px;
+  transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-out;
 }
 .left{
   float: left;
@@ -291,13 +293,9 @@ video::-webkit-media-controls {
 
 .fp-viewing-Produkte-0 .left{
   transform: translate(0,-65px);
-  transition: all 1s ease-out;
-  -webkit-transition: all 1s ease-out;
 }
 .fp-viewing-Produkte-0 .right{
   transform: translate(0,230px);
-  transition: all 1s ease-out;
-  -webkit-transition: all 1s ease-out;
 }
 
 .clear{
