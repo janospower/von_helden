@@ -24,13 +24,26 @@ h1, h2, h3, h4 {
 #header{
   top:0px;
   position:fixed;
-  height: 50px;
+  height: 215px;
+  padding-top: 13px;
   display:block;
   width: 100%;
   background: white;
   z-index:9;
   text-align:center;
-  padding: 20px 0 0 0;
+  background-image: url("../img/topbg.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+#topinfo{
+  /*top: 13px;*/
+  font-family: 'Press Start 2P', cursive;
+  font-size: 8px;
+}
+#topinfo table{
+  margin: auto;
+  width: 90%
 }
 
 #claim {
@@ -52,6 +65,11 @@ h1, h2, h3, h4 {
   height: 100%;
   width: 50px;
 }
+#leftwhite img{
+  position: absolute;
+  bottom: 59px;
+}
+
 
 ol,ul {
     list-style: none;
@@ -111,6 +129,7 @@ ol,ul {
   position: absolute;
   right: 0px;
   padding-left: 50px;
+  padding-top: 215px;
   bottom: 0;
   top:0;
   right:0;
