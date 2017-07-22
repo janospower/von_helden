@@ -101,28 +101,23 @@ ol,ul {
 }
 
 #menu li {
-	display:inline-block;
+  font-family: 'Press Start 2P', cursive;
+	/*display:inline-block;*/
 	margin: 10px;
-	color: #000;
-	background:#fff;
-	background: rgba(255,255,255, 0.5);
-	-webkit-border-radius: 10px;
-            border-radius: 10px;
+	color: black;
 }
-#menu li.active{
-	background:#666;
-	background: rgba(0,0,0, 0.5);
-	color: #fff;
+#menu li.active a::before {
+    content: '> ';
+
 }
 #menu li a{
 	text-decoration:none;
 	color: #000;
 }
 #menu li.active a:hover{
-	color: #000;
 }
-#menu li:hover{
-	background: rgba(255,255,255, 0.8);
+#menu li:hover a::before {
+    content: '> ';
 }
 #menu li a,
 #menu li.active a{
@@ -130,15 +125,15 @@ ol,ul {
 	display:block;
 }
 #menu li.active a{
-	color: #fff;
 }
 #menu{
+  background-color: white;
 	position:fixed;
-	top:0;
-	left:0;
-	height: 40px;
-	z-index: 70;
-	width: 100%;
+	top:120;
+	left:50;
+	/*height: 40px;*/
+	z-index: 7000;
+	/*width: 100%;*/
 	padding: 0;
 	margin:0;
 }
