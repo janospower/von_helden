@@ -23,6 +23,9 @@ h1, h2, h3, h4, h5 {
 h3 {
   font-size: 10px;
 }
+h1 {
+  font-size: 18px;
+}
 
 #header{
   top:0px;
@@ -247,6 +250,10 @@ video::-webkit-media-controls {
   font-size: 9px;
   font-family: 'Press Start 2P', cursive;
 }
+.pr{
+  text-align: left;
+  float:right;
+}
 .black {
   font-size: 18px;
   font-family: 'Press Start 2P', cursive;
@@ -263,14 +270,58 @@ video::-webkit-media-controls {
   right: 0;
   left: 0;
 }
-.fotoleft{
+.black img{
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+.foto{
   bottom: 0px;
-  left: 32px;
-  transform: translateY(-65px)
+}
+.left{
+  float: left;
+  margin-left: 82px;
+  transform: translate(0,-65px);
+}
+.right{
+  float: right;
+  margin-right: 0px;
+  transform: translate(0,230px);
+}
+.clear{
+  clear: both;
 }
 #slide1{
   overflow: visible;
 }
 .fp-slides, .fp-scrollable, .fp-scroller{
   overflow: visible !important;
+
+/*.fp-tableCell{
+  display: block;
+}*/
+
+.info{
+  border-left: solid 1px black;
+  margin-left: 50px;
+  margin-top: 0px;
+  margin-right: 342px;
+  margin-bottom: 0px;
+  text-align: left;
+  font-size: 18px;
+  padding-left: 16px;
+  line-height: 150%;
+}
+b{
+  font-weight: 900;
+}
+.placeholder{
+  min-height: 200px;
+}
+.text{
+  font-size: 18px;
+  line-height: 150%;
+  text-align: left;
+  width: 340px;
+  margin-left: 91px;
 }
