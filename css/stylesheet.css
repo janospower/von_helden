@@ -34,6 +34,11 @@ h1, h2, h3, h4 {
   background-image: url("../img/topbg.png");
   background-repeat: no-repeat;
   background-position: left top;
+  -webkit-transition-duration: 1s; /* Safari */
+    transition-duration: 1s;
+}
+#header:hover{
+  background-color: black;
 }
 
 #topinfo{

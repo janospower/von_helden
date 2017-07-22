@@ -31,7 +31,18 @@
           slidesNavigation: true,
           menu: '#menu',
           keyboardScrolling: true,
-  				css3: true
+  				css3: true,
+
+          afterLoad: function(anchorLink, index){
+        		var loadedSection = $(this);
+
+        		//using anchorLink
+        		if(anchorLink != 'home'){
+        			// alert("Section 2 ended loading");
+              document.getElementsByClassName("header").style.fill = "black";
+        		}
+        	}
+
   			});
   		});
   	</script>
