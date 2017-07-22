@@ -361,9 +361,10 @@ b{
   font-size: 18px;
   line-height: 150%;
   text-align: left;
-  width: 388px;
+  width: 488px;
   margin-left: 50%;
   margin-top: 90px;
+  margin-bottom: 50px;
 }
 .achtungcont{
   background-color: black;
@@ -371,7 +372,7 @@ b{
 }
 .achtung{
   color: white;
-  width: 408px;
+  width: 508px;
   text-align: left;
   padding: 20px;
 
@@ -396,4 +397,21 @@ b{
   color: black;
   background-color: white;
   padding: 5px;
+}
+
+footer{
+  margin-left: 50%;
+  margin-top: 19px;
+  text-align: left;
+  font-size: 10px;
+  font-family: 'Press Start 2P', cursive;
+}
+footer a{
+  color: black;
+}
+footer ul li{
+  display: inline-block;
+}
+footer li{
+  text-align: center;
 }
