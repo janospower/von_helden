@@ -39,10 +39,16 @@
         		//using anchorLink
         		if(anchorLink != 'home'){
         			// alert("Section 2 ended loading");
-              document.getElementById("header").style.height = "50px";
+              document.getElementById("header").style.height = "60px";
+              document.getElementById("logo").style.top = "-10px";
+              document.getElementById("logo").style.width = "200px";
+              document.getElementById("topinfo").style.transform = "translateY(-50px)";
         		}
             else {
               document.getElementById("header").style.height = "215px";
+              document.getElementById("logo").style.top = "85px";
+              document.getElementById("logo").style.width = "334px";
+              document.getElementById("topinfo").style.transform = "translateY(0px)";
             }
         	}
 
@@ -113,13 +119,16 @@
           </tr>
         </table>
       </div>
+      <a data-menuanchor="home" href="#home">
+        <img src="img/logo.svg" alt="VON HELDEN Logo" id="logo" />
+      </a>
     </div>
-    <ul id="menu">
+    <!-- <ul id="menu">
     	<li data-menuanchor="home"><a href="#home">Home</a></li>
     	<li data-menuanchor="Produkte"><a href="#Produkte">Produkte</a></li>
     	<li data-menuanchor="Über"><a href="#Über">Über uns</a></li>
     	<li data-menuanchor="Warum"><a href="#Warum">Warum</a></li>
-    </ul>
+    </ul> -->
 
     <div id="fullpage">
     	<div class="section " id="section0">
@@ -139,7 +148,7 @@
             gute Nachrichten von Helden </br>
             bekommen.
           </p>
-          <input value="deine@email.de" />
+          <input type="textbox" placeholder="deine@email.de" />
           <a href="#">Abschicken</a>
         </div>
         <video id="myVideo" muted data-autoplay onended="this.play(); disp();">
@@ -153,10 +162,9 @@
     	<div class="section" id="section1">
   	    <div class="slide" id="slide1">
     			<div class="intro">
-    				<h1>How to do it</h1>
+    				<h1>Produkte</h1>
     				<p>
-    					You will need to place your header and footer outside the plugin's wrapper.
-    					This way it won't move on scrolling. Take a look at the source code of this page.
+    					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     				</p>
     			</div>
     		</div>
@@ -169,13 +177,13 @@
 
     	<div class="section" id="section2">
     		<div class="intro">
-    			<h1>Enjoy it</h1>
+    			<h1>Über uns</h1>
     		</div>
     	</div>
 
       <div class="section" id="section3">
     		<div class="intro">
-    			<h1>4</h1>
+    			<h1>Warum</h1>
     		</div>
     	</div>
 

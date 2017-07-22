@@ -4,7 +4,7 @@
 
 ::selection {
     color: white;
-    background: hsl(152, 89%, 61%);
+    background: black;
 }
 
 body {
@@ -48,10 +48,19 @@ h3 {
   /*top: 13px;*/
   font-family: 'Press Start 2P', cursive;
   font-size: 8px;
+  -webkit-transition-duration: 1s; /* Safari */
+    transition-duration: 1s;
 }
 #topinfo table{
   margin: auto;
-  width: 90%
+  width: 90%;
+}
+#logo{
+  width: 334px;
+  top: 85px;
+  position: relative;
+  -webkit-transition-duration: 1s; /* Safari */
+    transition-duration: 1s;
 }
 
 #claim {
