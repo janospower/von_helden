@@ -39,8 +39,11 @@
         		//using anchorLink
         		if(anchorLink != 'home'){
         			// alert("Section 2 ended loading");
-              document.getElementsByClassName("header").style.fill = "black";
+              document.getElementById("header").style.height = "50px";
         		}
+            else {
+              document.getElementById("header").style.height = "215px";
+            }
         	}
 
   			});

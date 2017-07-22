@@ -37,9 +37,9 @@ h1, h2, h3, h4 {
   -webkit-transition-duration: 1s; /* Safari */
     transition-duration: 1s;
 }
-#header:hover{
+/*#header:hover{
   background-color: black;
-}
+}*/
 
 #topinfo{
   /*top: 13px;*/
