@@ -129,13 +129,16 @@ ol,ul {
 #menu{
   background-color: white;
 	position:fixed;
-	top:120;
-	left:50;
+	top:50px;
+	left:50px;
 	/*height: 40px;*/
 	z-index: 7000;
 	/*width: 100%;*/
 	padding: 0;
 	margin:0;
+}
+.mtitle span:hover{
+  border-bottom:3px solid #000;padding-bottom:6px
 }
 
 .section{
