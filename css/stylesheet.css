@@ -17,7 +17,7 @@ a {
   /*color: inherit;*/
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-family: 'Press Start 2P', cursive;
 }
 h3 {
@@ -153,7 +153,7 @@ ol,ul {
 }
 
 #signup{
-  /*display: none;*/
+  display: none;
   position: absolute;
   top: 220px;
   margin-left: auto;
@@ -172,6 +172,35 @@ ol,ul {
   margin-right: 20px;
   margin-top: 25px;
   cursor: pointer;
+}
+#signup h4{
+  text-align: center;
+  margin-top: 100px;
+  line-height: 120%;
+}
+#signup p{
+  text-align: center;
+  margin-top: 20px;
+  line-height: 130%;
+}
+#signup input{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 9px;
+  font-family: 'Press Start 2P', cursive;
+  color: grey;
+  border: solid 1.25px black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#signup a{
+  text-align: center;
+  font-size: 10px;
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  background-color: black;
+  padding: 5px;
 }
 
 #section0 .layer{
