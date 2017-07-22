@@ -339,7 +339,8 @@ b{
   bottom: 0px;
   width: 100%;
   background-image: url("../img/aboutbg.jpg");
-  background-size:cover;
+  background-size:100%;
+  background-repeat: no-repeat;
   background-position: left bottom;
   bottom: 0px;
   position: absolute;
@@ -348,9 +349,10 @@ b{
 .why{
   bottom: 0px;
   width: 100%;
-  background-image: url("../img/whybg.jpg");
-  background-size:cover;
-  background-position: left top;
+  background-image: url("../img/bottbg.png"), url("../img/whybg.jpg");
+  background-size: 649px, 100%;
+  background-repeat: no-repeat, no-repeat;
+  background-position: right bottom, left top;
   bottom: 0px;
   position: absolute;
   top: 0px;
@@ -359,7 +361,39 @@ b{
   font-size: 18px;
   line-height: 150%;
   text-align: left;
-  width: 340px;
-  margin-left: 646px;
+  width: 388px;
+  margin-left: 50%;
   margin-top: 90px;
+}
+.achtungcont{
+  background-color: black;
+  margin-left: 50%;
+}
+.achtung{
+  color: white;
+  width: 408px;
+  text-align: left;
+  padding: 20px;
+
+}
+.achtung input{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 9px;
+  font-family: 'Press Start 2P', cursive;
+  color: grey;
+  border: solid 1.25px white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: black;
+  margin-right: 19px;
+}
+.achtung a{
+  text-align: center;
+  font-size: 10px;
+  font-family: 'Press Start 2P', cursive;
+  color: black;
+  background-color: white;
+  padding: 5px;
 }
