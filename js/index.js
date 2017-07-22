@@ -9,3 +9,7 @@ function disp()
 {
   document.getElementById("signup").style.display = "block";
 }
+function nodisp()
+{
+  document.getElementById("signup").style.display = "none";
+}
