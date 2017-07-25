@@ -18,6 +18,10 @@ a {
 }
 a:hover{
   color: #ac9963;
+  /*-webkit-animation-name: flicker;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;*/
 }
 
 h1, h2, h3, h4, h5 {
@@ -60,6 +64,10 @@ h1 {
 #topinfo table{
   margin: auto;
   width: 90%;
+  -webkit-animation-name: flicker;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
 }
 #logo{
   width: 334px;
@@ -433,4 +441,271 @@ footer ul li{
 }
 footer li{
   text-align: center;
+}
+
+@-webkit-keyframes flicker {
+	from {
+		opacity: 1;
+    -ms-transform: skewX(0deg); /* IE 9 */
+    -webkit-transform: skewX(0deg); /* Safari */
+    transform: skewX(0deg);
+
+    -webkit-animation-timing-function: steps(1, end);
+    -moz-animation-timing-function: steps(1, end);
+    -ms-animation-timing-function: steps(1, end);
+    -o-animation-timing-function: steps(1, end);
+    animation-timing-function: steps(1, end);
+	}
+	4% {
+		opacity: 1;
+    -webkit-animation-timing-function: steps(1, end);
+    -moz-animation-timing-function: steps(1, end);
+    -ms-animation-timing-function: steps(1, end);
+    -o-animation-timing-function: steps(1, end);
+    animation-timing-function: steps(1, end);
+	}
+	6% {
+		opacity: 0;
+    -webkit-animation-timing-function: steps(1, end);
+    -moz-animation-timing-function: steps(1, end);
+    -ms-animation-timing-function: steps(1, end);
+    -o-animation-timing-function: steps(1, end);
+    animation-timing-function: steps(1, end);
+	}
+	8% {
+		opacity: 1;
+    -webkit-animation-timing-function: steps(1, end);
+    -moz-animation-timing-function: steps(1, end);
+    -ms-animation-timing-function: steps(1, end);
+    -o-animation-timing-function: steps(1, end);
+    animation-timing-function: steps(1, end);
+	}
+	10% {
+		opacity: 0;
+    -webkit-animation-timing-function: steps(1, end);
+    -moz-animation-timing-function: steps(1, end);
+    -ms-animation-timing-function: steps(1, end);
+    -o-animation-timing-function: steps(1, end);
+    animation-timing-function: steps(1, end);
+	}
+	11% {
+		opacity: 1;
+    -webkit-animation-timing-function: steps(1, end);
+    -moz-animation-timing-function: steps(1, end);
+    -ms-animation-timing-function: steps(1, end);
+    -o-animation-timing-function: steps(1, end);
+    animation-timing-function: steps(1, end);
+
+    -ms-transform: skewX(-20deg); /* IE 9 */
+    -webkit-transform: skewX(-20deg); /* Safari */
+    transform: skewX(-20deg);
+	}
+	12% {
+		opacity: 1;
+    -webkit-animation-timing-function: steps(1, end);
+    -moz-animation-timing-function: steps(1, end);
+    -ms-animation-timing-function: steps(1, end);
+    -o-animation-timing-function: steps(1, end);
+    animation-timing-function: steps(1, end);
+	}
+	14% {
+		opacity: 1;
+    -webkit-animation-timing-function: steps(1, end);
+    -moz-animation-timing-function: steps(1, end);
+    -ms-animation-timing-function: steps(1, end);
+    -o-animation-timing-function: steps(1, end);
+    animation-timing-function: steps(1, end);
+	}
+	16% {
+		opacity: 0;
+    -webkit-animation-timing-function: steps(1, end);
+    -moz-animation-timing-function: steps(1, end);
+    -ms-animation-timing-function: steps(1, end);
+    -o-animation-timing-function: steps(1, end);
+    animation-timing-function: steps(1, end);
+	}
+	17% {
+		opacity: 1;
+    -webkit-animation-timing-function: steps(1, end);
+    -moz-animation-timing-function: steps(1, end);
+    -ms-animation-timing-function: steps(1, end);
+    -o-animation-timing-function: steps(1, end);
+    animation-timing-function: steps(1, end);
+
+    -ms-transform: skewX(20deg); /* IE 9 */
+    -webkit-transform: skewX(20deg); /* Safari */
+    transform: skewX(20deg);
+	}
+	19% {
+		opacity: 1;
+    -webkit-animation-timing-function: steps(1, end);
+    -moz-animation-timing-function: steps(1, end);
+    -ms-animation-timing-function: steps(1, end);
+    -o-animation-timing-function: steps(1, end);
+    animation-timing-function: steps(1, end);
+	}
+	20% {
+		opacity: 1;
+    -webkit-animation-timing-function: steps(1, end);
+    -moz-animation-timing-function: steps(1, end);
+    -ms-animation-timing-function: steps(1, end);
+    -o-animation-timing-function: steps(1, end);
+    animation-timing-function: steps(1, end);
+
+    -ms-transform: skewX(20deg); /* IE 9 */
+    -webkit-transform: skewX(20deg); /* Safari */
+    transform: skewX(20deg);
+	}
+	24% {
+		opacity: 0;
+    -webkit-animation-timing-function: steps(1, end);
+    -moz-animation-timing-function: steps(1, end);
+    -ms-animation-timing-function: steps(1, end);
+    -o-animation-timing-function: steps(1, end);
+    animation-timing-function: steps(1, end);
+	}
+	26% {
+		opacity: 0;
+    -webkit-animation-timing-function: steps(1, end);
+    -moz-animation-timing-function: steps(1, end);
+    -ms-animation-timing-function: steps(1, end);
+    -o-animation-timing-function: steps(1, end);
+    animation-timing-function: steps(1, end);
+	}
+	28% {
+		opacity: 1;
+    -webkit-animation-timing-function: steps(1, end);
+    -moz-animation-timing-function: steps(1, end);
+    -ms-animation-timing-function: steps(1, end);
+    -o-animation-timing-function: steps(1, end);
+    animation-timing-function: steps(1, end);
+	}
+	38% {
+		opacity: 1;
+    -webkit-animation-timing-function: steps(1, end);
+    -moz-animation-timing-function: steps(1, end);
+    -ms-animation-timing-function: steps(1, end);
+    -o-animation-timing-function: steps(1, end);
+    animation-timing-function: steps(1, end);
+
+    -ms-transform: skewX(-20deg); /* IE 9 */
+    -webkit-transform: skewX(-20deg); /* Safari */
+    transform: skewX(-20deg);
+	}
+	40% {
+		opacity: 1;
+    -webkit-animation-timing-function: steps(1, end);
+    -moz-animation-timing-function: steps(1, end);
+    -ms-animation-timing-function: steps(1, end);
+    -o-animation-timing-function: steps(1, end);
+    animation-timing-function: steps(1, end);
+	}
+	42% {
+		opacity: 1;
+    -webkit-animation-timing-function: steps(1, end);
+    -moz-animation-timing-function: steps(1, end);
+    -ms-animation-timing-function: steps(1, end);
+    -o-animation-timing-function: steps(1, end);
+    animation-timing-function: steps(1, end);
+	}
+	44% {
+		opacity: 0;
+    -webkit-animation-timing-function: steps(1, end);
+    -moz-animation-timing-function: steps(1, end);
+    -ms-animation-timing-function: steps(1, end);
+    -o-animation-timing-function: steps(1, end);
+    animation-timing-function: steps(1, end);
+	}
+	46% {
+		opacity: 1;
+    -webkit-animation-timing-function: steps(1, end);
+    -moz-animation-timing-function: steps(1, end);
+    -ms-animation-timing-function: steps(1, end);
+    -o-animation-timing-function: steps(1, end);
+    animation-timing-function: steps(1, end);
+	}
+	56% {
+		opacity: 0;
+    -webkit-animation-timing-function: steps(1, end);
+    -moz-animation-timing-function: steps(1, end);
+    -ms-animation-timing-function: steps(1, end);
+    -o-animation-timing-function: steps(1, end);
+    animation-timing-function: steps(1, end);
+	}
+	58% {
+		opacity: 1;
+    -webkit-animation-timing-function: steps(1, end);
+    -moz-animation-timing-function: steps(1, end);
+    -ms-animation-timing-function: steps(1, end);
+    -o-animation-timing-function: steps(1, end);
+    animation-timing-function: steps(1, end);
+	}
+	60% {
+		opacity: 1;
+    -webkit-animation-timing-function: steps(1, end);
+    -moz-animation-timing-function: steps(1, end);
+    -ms-animation-timing-function: steps(1, end);
+    -o-animation-timing-function: steps(1, end);
+    animation-timing-function: steps(1, end);
+	}
+	68% {
+		opacity: 1;
+    -webkit-animation-timing-function: steps(1, end);
+    -moz-animation-timing-function: steps(1, end);
+    -ms-animation-timing-function: steps(1, end);
+    -o-animation-timing-function: steps(1, end);
+    animation-timing-function: steps(1, end);
+	}
+	70% {
+		opacity: 1; /*peak*/
+    -webkit-animation-timing-function: steps(1, end);
+    -moz-animation-timing-function: steps(1, end);
+    -ms-animation-timing-function: steps(1, end);
+    -o-animation-timing-function: steps(1, end);
+    animation-timing-function: steps(1, end);
+	}
+	72% {
+		opacity: 0;
+    -webkit-animation-timing-function: steps(1, end);
+    -moz-animation-timing-function: steps(1, end);
+    -ms-animation-timing-function: steps(1, end);
+    -o-animation-timing-function: steps(1, end);
+    animation-timing-function: steps(1, end);
+	}
+	93% {
+		opacity: 1;
+    -webkit-animation-timing-function: steps(1, end);
+    -moz-animation-timing-function: steps(1, end);
+    -ms-animation-timing-function: steps(1, end);
+    -o-animation-timing-function: steps(1, end);
+    animation-timing-function: steps(1, end);
+	}
+	95% {
+		opacity: 1; /*peak*/
+
+    -webkit-animation-timing-function: steps(1, end);
+    -moz-animation-timing-function: steps(1, end);
+    -ms-animation-timing-function: steps(1, end);
+    -o-animation-timing-function: steps(1, end);
+    animation-timing-function: steps(1, end);
+	}
+	97% {
+		opacity: 1;
+    -webkit-animation-timing-function: steps(1, end);
+    -moz-animation-timing-function: steps(1, end);
+    -ms-animation-timing-function: steps(1, end);
+    -o-animation-timing-function: steps(1, end);
+    animation-timing-function: steps(1, end);
+	}
+	to {
+		opacity: 1;
+    -webkit-animation-timing-function: steps(1, end);
+    -moz-animation-timing-function: steps(1, end);
+    -ms-animation-timing-function: steps(1, end);
+    -o-animation-timing-function: steps(1, end);
+    animation-timing-function: steps(1, end);
+    -ms-transform: skewX(20deg); /* IE 9 */
+    -webkit-transform: skewX(20deg); /* Safari */
+    transform: skewX(20deg);
+	}
 }

@@ -161,6 +161,10 @@
         <input type="textbox" placeholder="deine@email.de" />
         <a href="#">Abschicken</a>
       </div>
+        <div onclick="disableMute();" class="sound">
+          <img src="img/soundoff.png" id="off"  />
+            <img src="img/soundoff.png" id="on"  />
+      </div>
       <video id="myVideo" muted onclick="disableMute()" data-autoplay onended="this.play(); disp();" >
         <source src="img/Teaservideo.mp4" type="video/mp4">
           <source src="img/Teaservideo.webm" type="video/webm">
