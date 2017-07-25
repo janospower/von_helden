@@ -27,9 +27,11 @@ function product(p){
   for (var i = 0; i < ps.length; i++) {
     if (ps[i].id==p) {
       document.getElementById(ps[i].id).style.background = "white";
+      document.getElementById(ps[i].id+"div").style.display = "block";
     }
     else {
       document.getElementById(ps[i].id).style.background = "black";
+      document.getElementById(ps[i].id+"div").style.display = "none";
     };
   };
 

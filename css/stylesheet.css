@@ -328,10 +328,10 @@ video::-webkit-media-controls {
   transform: translate(0,0px);
 }
 
-.fp-viewing-Produkte-0 .left{
+.fp-viewing-Produkte-0 #p1div.left{
   transform: translate(0,-65px);
 }
-.fp-viewing-Produkte-0 .right{
+.fp-viewing-Produkte-0 #p1div .right{
   transform: translate(0,230px);
 }
 
@@ -384,6 +384,12 @@ b{
 .thumbnail img {
   max-width: 100%;
   max-height: 400px;
+}
+.hidden{
+  display: none;
+}
+.hidden .foto{
+  width: 30%;
 }
 .text{
   font-size: 18px;
