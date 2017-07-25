@@ -142,7 +142,8 @@ ol,ul {
 }
 .it{
   display: none;
-    background-color: white;
+  background-color: white;
+  min-width: 250px;
 }
 .hamb{
   margin-top: 10px;
@@ -257,8 +258,9 @@ video::-webkit-media-controls {
 .pagination{
   width: 512px;
   border-top: 1px solid black;
-  margin-top: 50px;
   text-align: right;
+  top: -50px;
+  position: absolute ;
   font-size: 9px;
   font-family: 'Press Start 2P', cursive;
 }
@@ -288,7 +290,8 @@ video::-webkit-media-controls {
   left: 20px;
 }
 .foto{
-  bottom: 0px;
+  margin-top: 0px;
+  /*min-width: 40%;*/
   transition: all 1s ease-out;
   -webkit-transition: all 1s ease-out;
 }
@@ -313,8 +316,9 @@ video::-webkit-media-controls {
 .clear{
   clear: both;
 }
-#slide1{
+#section1{
   overflow: visible;
+  margin-top: 200px;
 }
 .fp-slides, .fp-scrollable, .fp-scroller{
   overflow: visible !important;
