@@ -22,6 +22,9 @@ $(document).ready(function () {
   }, 5000);
 });
 
+function product(p){
+  alert(p);
+}
 
 function disableMute() {
   if (document.getElementById("myVideo").muted==true) {
