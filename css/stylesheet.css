@@ -321,7 +321,7 @@ video::-webkit-media-controls {
   float: left;
   margin-left: 32px;
   transform: translate(0,0px);
-  height: 847px;
+  /*height: 847px;*/
 }
 .right{
   float: right;
@@ -372,25 +372,32 @@ b{
   margin-top: 40px;
 }
 .thumbnail{
-  width: 24%;
+  width: 18%;
   max-width: 300px;
   margin: 0;
   display: inline-block;
-  height: 400px;
+  height: 260px;
   background: black;
 }
 .thumbnail:hover{
   background: white !important;
 }
 .thumbnail img {
-  max-width: 100%;
-  max-height: 400px;
+  max-width: 12vw;
+  max-height: 260px;
 }
 .hidden{
   display: none;
 }
-.hidden .foto{
-  width: 30%;
+.hidden .left{
+  max-width: 478px;
+  max-height: 847px;
+  /*width: 30%;*/
+}
+.hidden .right{
+  max-width: 339px;
+  max-height: 775px;
+  /*width: 30%;*/
 }
 .text{
   font-size: 18px;
