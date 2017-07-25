@@ -376,15 +376,15 @@ b{
   max-width: 300px;
   margin: 0;
   display: inline-block;
-  height: 260px;
+  max-height: 18vw;
   background: black;
 }
 .thumbnail:hover{
   background: white !important;
 }
 .thumbnail img {
-  max-width: 12vw;
-  max-height: 260px;
+  /*max-width: 12vw;*/
+  max-height: 18vw;
 }
 .hidden{
   display: none;
