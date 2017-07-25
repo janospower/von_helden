@@ -261,9 +261,11 @@ video::-webkit-media-controls {
   margin-top: 50px;
   text-align: right;
   top: -50px;
-  position: absolute ;
   font-size: 9px;
   font-family: 'Press Start 2P', cursive;
+}
+.swrap{
+  padding-top: 100px;
 }
 .pr{
   text-align: left;
@@ -280,30 +282,27 @@ video::-webkit-media-controls {
   padding-right: 32px;
   padding-top: 10px;
   z-index: -1;
-  position: absolute ;
-  top:0;
-  right: 0;
-  left: 0;
 }
-.black img{
-  position: absolute;
+.bgbg{
+  position: relative;
+  float: left;
   top: 10px;
   left: 20px;
 }
 .foto{
-  margin-top: 0px;
+  margin-top: -82px;
   /*min-width: 40%;*/
   transition: all 1s ease-out;
   -webkit-transition: all 1s ease-out;
 }
 .left{
   float: left;
-  margin-left: 82px;
-  transform: translate(0,65px);
+  margin-left: 32px;
+  transform: translate(0,0px);
 }
 .right{
   float: right;
-  margin-right: 0px;
+  margin-right: -32px;
   transform: translate(0,0px);
 }
 
@@ -318,11 +317,11 @@ video::-webkit-media-controls {
   clear: both;
 }
 #section1{
-  overflow: visible;
+  /*overflow: visible;*/
   /*margin-top: 200px;*/
 }
 .fp-slides, .fp-scrollable, .fp-scroller{
-  overflow: visible !important;
+  /*overflow: visible !important;*/
 }
 .fp-tableCell{
   display: block !important;
