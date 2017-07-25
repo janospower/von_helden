@@ -1,306 +1,308 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
 
-    <!-- metadata -->
-    <title>VON HELDEN</title>
-    <meta name="description" content="Von Helden. Ein upcycling Modelabel aus Berlin." />
-    <meta name="keywords"  content="upcycling,helden,berlin,fashion,mode,modelabel,label,recycling,nachhaltig" />
+  <!-- metadata -->
+  <title>VON HELDEN</title>
+  <meta name="description" content="Von Helden. Ein upcycling Modelabel aus Berlin." />
+  <meta name="keywords"  content="upcycling,helden,berlin,fashion,mode,modelabel,label,recycling,nachhaltig" />
 
-    <meta name = "viewport" content = "width = device-width">
+  <meta name = "viewport" content = "width = device-width">
 
-    <!-- css -->
-    <link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+  <!-- css -->
+  <link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
 
-    <!-- js -->
+  <!-- js -->
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-    <script src="js/index.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+  <script src="js/index.js"></script>
 
-    <script type="text/javascript" src="vendors/scrolloverflow.js"></script>
+  <script type="text/javascript" src="vendors/scrolloverflow.js"></script>
 
-    <script type="text/javascript" src="jquery.fullPage.js"></script>
+  <script type="text/javascript" src="jquery.fullPage.js"></script>
 
-    <script type="text/javascript">
-  		$(document).ready(function() {
-  			$('#fullpage').fullpage({
-  				anchors: ['home', 'Produkte', 'Über', 'Warum'],
-          slidesNavigation: true,
-          menu: '#menu',
-          keyboardScrolling: true,
-  				css3: true,
-          scrollOverflow: true,
-          scrollOverflowReset: true,
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $('#fullpage').fullpage({
+      anchors: ['home', 'Produkte', 'Über', 'Warum'],
+      // slidesNavigation: true,
+      menu: '#menu',
+      keyboardScrolling: true,
+      css3: true,
+      scrollOverflow: true,
+      // scrollOverflowReset: true,
 
-          afterLoad: function(anchorLink, index){
-        		var loadedSection = $(this);
+      afterLoad: function(anchorLink, index){
+        var loadedSection = $(this);
 
-        		//using anchorLink
-        		if(anchorLink != 'home'){
-        			// alert("Section 2 ended loading");
-              document.getElementById("header").style.height = "37px";
-              document.getElementById("logo").style.top = "-15px";
-              document.getElementById("logo").style.width = "200px";
-              document.getElementById("topinfo").style.transform = "translateY(-50px)";
-        		}
-            else {
-              document.getElementById("header").style.height = "215px";
-              document.getElementById("logo").style.top = "85px";
-              document.getElementById("logo").style.width = "334px";
-              document.getElementById("topinfo").style.transform = "translateY(0px)";
-            }
-        	}
+        //using anchorLink
+        if(anchorLink != 'home'){
+          // alert("Section 2 ended loading");
+          document.getElementById("header").style.height = "37px";
+          document.getElementById("logo").style.top = "-15px";
+          document.getElementById("logo").style.width = "200px";
+          document.getElementById("topinfo").style.transform = "translateY(-50px)";
+        }
+        else {
+          document.getElementById("header").style.height = "215px";
+          document.getElementById("logo").style.top = "85px";
+          document.getElementById("logo").style.width = "334px";
+          document.getElementById("topinfo").style.transform = "translateY(0px)";
+        }
+      }
 
-  			});
-  		});
-  	</script>
+    });
+  });
+  </script>
 
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,900" rel="stylesheet">
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,900" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 
-  </head>
-  <body>
+</head>
+<body>
 
-    <select id="demosMenu">
-      <option selected>Choose Demo</option>
-      <option id="activeSlide">Active section and slide</option>
-      <option id="apple">Apple iPhone demo (animations)</option>
-      <option id="autoHeight">Auto height</option>
-      <option id="autoplayVideoAndAudio">Autoplay Video and Audio</option>
-      <option id="backgrounds">Background images</option>
-      <option id="backgroundsFixed">Fixed fullscreen backgrounds</option>
-      <option id="backgroundVideo">Background video</option>
-      <option id="callbacks">Callbacks</option>
-      <option id="continuousHorizontal">Continuous horizontal</option>
-      <option id="continuousVertical">Continuous vertical</option>
-      <option id="parallax">Parallax</option>
-      <option id="css3">CSS3</option>
-      <option id="dragAndMove">Drag And Move</option>
-      <option id="easing">Easing</option>
-      <option id="fadingEffect">Fading Effect</option>
-      <option id="fixedHeaders">Fixed headers</option>
-      <option id="gradientBackgrounds">Gradient backgrounds</option>
-      <option id="interlockedSlides">Interlocked Slides</option>
-      <option id="looping">Looping</option>
-      <option id="methods">Methods</option>
-      <option id="navigationV">Vertical navigation dots</option>
-      <option id="navigationH">Horizontal navigation dots</option>
-      <option id="noAnchor">No anchor links</option>
-      <option id="normalScroll">Normal scrolling</option>
-      <option id="normalScrollElements">Normal scroll elements</option>
-      <option id="offsetSections">Offset sections</option>
-      <option id="oneSection">One single section</option>
-      <option id="resetSliders">Reset sliders</option>
-      <option id="responsiveAutoHeight">Responsive Auto Height</option>
-      <option id="responsiveHeight">Responsive Height</option>
-      <option id="responsiveWidth">Responsive Width</option>
-      <option id="responsiveSlides">Responsive Slides</option>
-      <option id="scrollBar">Scroll bar enabled</option>
-      <option id="scrollHorizontally">Scroll horizontally</option>
-      <option id="scrollOverflow">Scroll inside sections and slides</option>
-      <option id="scrollOverflowReset">ScrollOverflow Reset</option>
-      <option id="lazyLoad">Lazy load</option>
-      <option id="scrollingSpeed">Scrolling speed</option>
-    </select>
+  <select id="demosMenu">
+    <option selected>Choose Demo</option>
+    <option id="activeSlide">Active section and slide</option>
+    <option id="apple">Apple iPhone demo (animations)</option>
+    <option id="autoHeight">Auto height</option>
+    <option id="autoplayVideoAndAudio">Autoplay Video and Audio</option>
+    <option id="backgrounds">Background images</option>
+    <option id="backgroundsFixed">Fixed fullscreen backgrounds</option>
+    <option id="backgroundVideo">Background video</option>
+    <option id="callbacks">Callbacks</option>
+    <option id="continuousHorizontal">Continuous horizontal</option>
+    <option id="continuousVertical">Continuous vertical</option>
+    <option id="parallax">Parallax</option>
+    <option id="css3">CSS3</option>
+    <option id="dragAndMove">Drag And Move</option>
+    <option id="easing">Easing</option>
+    <option id="fadingEffect">Fading Effect</option>
+    <option id="fixedHeaders">Fixed headers</option>
+    <option id="gradientBackgrounds">Gradient backgrounds</option>
+    <option id="interlockedSlides">Interlocked Slides</option>
+    <option id="looping">Looping</option>
+    <option id="methods">Methods</option>
+    <option id="navigationV">Vertical navigation dots</option>
+    <option id="navigationH">Horizontal navigation dots</option>
+    <option id="noAnchor">No anchor links</option>
+    <option id="normalScroll">Normal scrolling</option>
+    <option id="normalScrollElements">Normal scroll elements</option>
+    <option id="offsetSections">Offset sections</option>
+    <option id="oneSection">One single section</option>
+    <option id="resetSliders">Reset sliders</option>
+    <option id="responsiveAutoHeight">Responsive Auto Height</option>
+    <option id="responsiveHeight">Responsive Height</option>
+    <option id="responsiveWidth">Responsive Width</option>
+    <option id="responsiveSlides">Responsive Slides</option>
+    <option id="scrollBar">Scroll bar enabled</option>
+    <option id="scrollHorizontally">Scroll horizontally</option>
+    <option id="scrollOverflow">Scroll inside sections and slides</option>
+    <option id="scrollOverflowReset">ScrollOverflow Reset</option>
+    <option id="lazyLoad">Lazy load</option>
+    <option id="scrollingSpeed">Scrolling speed</option>
+  </select>
 
 
-    <div id="header">
-      <div id="topinfo">
-        <table>
-          <tr>
-            <th id="today">26/07/2017</th>
-            <th id="time">14:16</th>
-            <th>Vm9uIEhlbGRlbg</th>
-            <th>vH</th>
-            <th>Seite 01/10</th>
-          </tr>
-        </table>
-        <!-- <button id="mute-video">Toggle Mute</button> -->
-        <!-- <button onclick="disableMute()" type="button">toggle</button> -->
-      </div>
-      <a data-menuanchor="home" href="#home">
-        <img src="img/logo.svg" alt="VON HELDEN Logo" id="logo" />
-      </a>
+  <div id="header">
+    <div id="topinfo">
+      <table>
+        <tr>
+          <th id="today">26/07/2017</th>
+          <th id="time">14:16</th>
+          <th>Vm9uIEhlbGRlbg</th>
+          <th>vH</th>
+          <th>Seite 01/10</th>
+        </tr>
+      </table>
+      <!-- <button id="mute-video">Toggle Mute</button> -->
+      <!-- <button onclick="disableMute()" type="button">toggle</button> -->
     </div>
-    <ul id="menu">
-      <li>
-        <a href="#" class="mtitle" onclick="$('.it').toggle();$('.hamb').toggle()">
-          <span>Menü</span></br>
-          <!-- <img src="img/menu.png" class="hamb" /> -->
-        </a>
-      </li>
-    	<li data-menuanchor="home" class="it"><a href="#home">Home</a></li>
-    	<li data-menuanchor="Produkte" class="it"><a href="#Produkte">Produkte</a></li>
-    	<li data-menuanchor="Über" class="it"><a href="#Über">Über uns</a></li>
-    	<li data-menuanchor="Warum" class="it"><a href="#Warum">Warum</a></li>
-    </ul>
+    <a data-menuanchor="home" href="#home">
+      <img src="img/logo.svg" alt="VON HELDEN Logo" id="logo" />
+    </a>
+  </div>
+  <ul id="menu">
+    <li>
+      <a href="#" class="mtitle" onclick="$('.it').toggle();$('.hamb').toggle()">
+        <span>Menü</span></br>
+        <!-- <img src="img/menu.png" class="hamb" /> -->
+      </a>
+    </li>
+    <li data-menuanchor="home" class="it"><a href="#home">Home</a></li>
+    <li data-menuanchor="Produkte" class="it"><a href="#Produkte">Produkte</a></li>
+    <li data-menuanchor="Über" class="it"><a href="#Über">Über uns</a></li>
+    <li data-menuanchor="Warum" class="it"><a href="#Warum">Warum</a></li>
+  </ul>
 
-    <div id="fullpage">
-    	<div class="section " id="section0">
-        <div class="intro" id="claim">
-    			<h2>„Von Helden gibt ausrangierten </br>Stoffen ein zweites, nachhaltiges </br>Leben voller urbaner Abenteuer.“</h2>
-    		</div>
+  <div id="fullpage">
+    <div class="section " id="section0">
+      <div class="intro" id="claim">
+        <h2>„Von Helden gibt ausrangierten </br>Stoffen ein zweites, nachhaltiges </br>Leben voller urbaner Abenteuer.“</h2>
+      </div>
 
-        <div id="leftwhite">
-          <img src="img/leftbg.png" />
-        </div>
-        <div id="signup">
-          <h3 onclick="nodisp();">X</h3>
-          <h4>Achtung,</br>Achtung!</h4>
-          <p>
-            Jetzt Newsletter abonnieren</br>
-            und regelmäßig verdächtig</br>
-            gute Nachrichten von Helden </br>
-            bekommen.
-          </p>
-          <input type="textbox" placeholder="deine@email.de" />
-          <a href="#">Abschicken</a>
-        </div>
-        <video id="myVideo" muted onclick="disableMute()" data-autoplay onended="this.play(); disp();" >
-    			<source src="img/Teaservideo.mp4" type="video/mp4">
-    			<source src="img/Teaservideo.webm" type="video/webm">
+      <div id="leftwhite">
+        <img src="img/leftbg.png" />
+      </div>
+      <div id="signup">
+        <h3 onclick="nodisp();">X</h3>
+        <h4>Achtung,</br>Achtung!</h4>
+        <p>
+          Jetzt Newsletter abonnieren</br>
+          und regelmäßig verdächtig</br>
+          gute Nachrichten von Helden </br>
+          bekommen.
+        </p>
+        <input type="textbox" placeholder="deine@email.de" />
+        <a href="#">Abschicken</a>
+      </div>
+      <video id="myVideo" muted onclick="disableMute()" data-autoplay onended="this.play(); disp();" >
+        <source src="img/Teaservideo.mp4" type="video/mp4">
+          <source src="img/Teaservideo.webm" type="video/webm">
             Your browser does not support HTML5 video.
-    		</video>
+          </video>
 
-    	</div>
+        </div>
 
-    	<div class="section" id="section1">
+        <div class="section" id="section1">
+          <div class="slide" id="slide1 ">
+            <div class="swrap">
+              <div class="pagination">
+                <p>
+                  Seite 02/10
+                </p>
+              </div>
+              <img src="img/Produktfoto-11.png" alt="produkt 1" class="foto left" />
+              <img src="img/Produktfoto-14.png" alt="produkt 1" class="foto right" />
+              <div class="clear">
 
-  	    <div class="slide" id="slide1">
-          <div class="pagination">
-            <p>
-              Seite 02/10
-            </p>
-          </div>
-          <img src="img/Produktfoto-11.png" alt="produkt 1" class="foto left" />
-          <img src="img/Produktfoto-14.png" alt="produkt 1" class="foto right" />
-          <div class="clear">
+              </div>
+              <div class="intro product">
 
-          </div>
-    			<div class="intro product">
+                <div class="black">
+                  <p>
+                    Lederjacke </br>
+                    vH Abschnitt
+                  </p>
+                  <img src="img/dash.png" />
+                </div>
 
-            <div class="black">
-              <p>
-                Lederjacke </br>
-                vH Abschnitt
+
+                <div class="info">
+                  <p>
+                    <b>In dieser Lederjacke stecken Mut, Schweiß und Tränen aus mehreren ehemaligen Polizeijacken. Durch verdächtige Look-Veränderungen der ursprünglichen Schnitte, schmeichelt die taillierte Jacke jetzt fast jeder Figur und macht ihren Träger zum respektablen Helden im Abschnitt.</b>
+                  </br>
+
+                  Taillierte Lederjacke mit Stehkragen, sowie abgesetzten Schultern. Eingearbeitete Taschen an Front und Innenseite. Ärmel mit Reißverschluss.
+                </br>
+                Außenmaterial 100% Leder, Innenmaterial 100% Polyester
               </p>
-              <img src="img/dash.png" />
-            </div>
-
-
-            <div class="info">
-              <p>
-                <b>In dieser Lederjacke stecken Mut, Schweiß und Tränen aus mehreren ehemaligen Polizeijacken. Durch verdächtige Look-Veränderungen der ursprünglichen Schnitte, schmeichelt die taillierte Jacke jetzt fast jeder Figur und macht ihren Träger zum respektablen Helden im Abschnitt.</b>
-                </br>
-
-      					Taillierte Lederjacke mit Stehkragen, sowie abgesetzten Schultern. Eingearbeitete Taschen an Front und Innenseite. Ärmel mit Reißverschluss.
-                </br>
-Außenmaterial 100% Leder, Innenmaterial 100% Polyester
-      				</p>
             </div>
 
             <div class="placeholder"></div>
+          </div>
 
 
-    			</div>
-    		</div>
 
-  	    <!-- <div class="slide" id="slide2">
-    			<h1>Slide 2</h1>
-    		</div> -->
-    	</div>
+        </div>
+      </div>
 
-    	<div class="section" id="section2">
-        <div class="pagination pr">
+      <!-- <div class="slide" id="slide2">
+      <h1>Slide 2</h1>
+    </div> -->
+  </div>
+
+  <div class="section" id="section2">
+    <div class="pagination pr">
+      <p>
+        Seite 03/10
+      </p>
+    </div>
+    <div class="clear"></div>
+    <div class="intro">
+      <div class="about">
+        <div class="text">
+          <h1>Über uns</h1>
           <p>
-            Seite 03/10
+            Achtung, Achtung: Wir sind von Helden. Das wahrscheinlich verdächtigste Label der Hauptstadt. Unsere Mission ist jeden Tag aufs Neue eine echte Herausforderung.
           </p>
         </div>
-        <div class="clear"></div>
-    		<div class="intro">
-          <div class="about">
-            <div class="text">
-              <h1>Über uns</h1>
-              <p>
-                Achtung, Achtung: Wir sind von Helden. Das wahrscheinlich verdächtigste Label der Hauptstadt. Unsere Mission ist jeden Tag aufs Neue eine echte Herausforderung.
-              </p>
-            </div>
-          </div>
-
-    		</div>
-    	</div>
-
-      <div class="section" id="section3">
-        <div class="clear"></div>
-    		<div class="intro">
-          <div class="why">
-            <div class="textr">
-              <h1>Warum?</h1>
-              <p>
-                Weil wir Nachhaltigkeit endlich tragbar machen wollen. Wir sind ökologisch denkende und arbeitende Designer und Schneider.
-Für unsere Kollektionen nutzen wir ausgemusterte Uniformen und gebrauchte Ausrüstungsstücke der Polizei, Bundeswehr und der Feuerwehr. Daraus kreieren wir neue Schnittmuster und geben den ausrangierten Stoffen ein zweites, aufregendes Leben. Neben der Liebe zum Detail und handwerklicher Perfektion stecken in all unseren Stücken die Abenteuer ihrer Vorbesitzer.
-Over and out.
-              </p>
-            </div>
-            <div class="achtungcont">
-              <div class="achtung">
-                <h1>Achtung, Achtung!</h1>
-                <p>
-                  Jetzt Newsletter abonnieren und regelmäßig verdächtig gute Nachrichten von Helden bekommen.
-                </p>
-                <input type="textbox" placeholder="deine@email.de" />
-                <a href="#">Abschicken</a>
-              </div>
-            </div>
-
-            <footer>
-              <ul>
-                <li>
-                  <a href="https://www.facebook.com/heldenware/" target="_blank">
-                    <img src="img/flogo.png" /></br></br>
-                    Facebook
-                  </a>
-                </li>
-                <li>
-                  |
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/vonheldenberlin/" target="_blank">
-                    <img src="img/ilogo.png" /></br></br>
-                    Instagram
-                  </a>
-                </li>
-                <li>
-                  |
-                </li>
-                <li>
-                  <a href="http://heldenware.com/impressum.html">
-                    Impressum
-                  </a>
-                </li>
-                <li>
-                  |
-                </li>
-                <li>
-                  <a href="mailto:info@heldenware.com">
-                    Mail
-                  </a>
-                </li>
-              </ul>
-            </footer>
-
-
-          </div>
-
-    		</div>
-    	</div>
+      </div>
 
     </div>
+  </div>
 
-  </body>
+  <div class="section" id="section3">
+    <div class="clear"></div>
+    <div class="intro">
+      <div class="why">
+        <div class="textr">
+          <h1>Warum?</h1>
+          <p>
+            Weil wir Nachhaltigkeit endlich tragbar machen wollen. Wir sind ökologisch denkende und arbeitende Designer und Schneider.
+            Für unsere Kollektionen nutzen wir ausgemusterte Uniformen und gebrauchte Ausrüstungsstücke der Polizei, Bundeswehr und der Feuerwehr. Daraus kreieren wir neue Schnittmuster und geben den ausrangierten Stoffen ein zweites, aufregendes Leben. Neben der Liebe zum Detail und handwerklicher Perfektion stecken in all unseren Stücken die Abenteuer ihrer Vorbesitzer.
+            Over and out.
+          </p>
+        </div>
+        <div class="achtungcont">
+          <div class="achtung">
+            <h1>Achtung, Achtung!</h1>
+            <p>
+              Jetzt Newsletter abonnieren und regelmäßig verdächtig gute Nachrichten von Helden bekommen.
+            </p>
+            <input type="textbox" placeholder="deine@email.de" />
+            <a href="#">Abschicken</a>
+          </div>
+        </div>
+
+        <footer>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/heldenware/" target="_blank">
+                <img src="img/flogo.png" /></br></br>
+                Facebook
+              </a>
+            </li>
+            <li>
+              |
+            </li>
+            <li>
+              <a href="https://www.instagram.com/vonheldenberlin/" target="_blank">
+                <img src="img/ilogo.png" /></br></br>
+                Instagram
+              </a>
+            </li>
+            <li>
+              |
+            </li>
+            <li>
+              <a href="http://heldenware.com/impressum.html">
+                Impressum
+              </a>
+            </li>
+            <li>
+              |
+            </li>
+            <li>
+              <a href="mailto:info@heldenware.com">
+                Mail
+              </a>
+            </li>
+          </ul>
+        </footer>
+
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+</body>
 </html>

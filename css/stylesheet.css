@@ -258,6 +258,7 @@ video::-webkit-media-controls {
 .pagination{
   width: 512px;
   border-top: 1px solid black;
+  margin-top: 50px;
   text-align: right;
   top: -50px;
   position: absolute ;
@@ -318,7 +319,7 @@ video::-webkit-media-controls {
 }
 #section1{
   overflow: visible;
-  margin-top: 200px;
+  /*margin-top: 200px;*/
 }
 .fp-slides, .fp-scrollable, .fp-scroller{
   overflow: visible !important;
