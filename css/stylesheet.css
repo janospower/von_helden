@@ -24,6 +24,7 @@ a:hover{
 	-webkit-animation-timing-function: linear;*/
 }
 
+
 h1, h2, h3, h4, h5 {
   font-family: 'Press Start 2P', cursive;
 }
@@ -180,7 +181,20 @@ ol,ul {
     object-fit: cover; /*cover video background */
     z-index:3;
 }
-
+.sound img{
+  position: absolute;
+  /*top: 220px;*/
+  right: 50px;
+  bottom: 50px;
+  /*left: 0;
+  right: 0;*/
+  z-index: 90;
+  background-color: none;
+  cursor: pointer;
+}
+#on{
+  display: none;
+}
 #signup{
   display: none;
   position: absolute;

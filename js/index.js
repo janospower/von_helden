@@ -26,8 +26,12 @@ $(document).ready(function () {
 function disableMute() {
   if (document.getElementById("myVideo").muted==true) {
     document.getElementById("myVideo").muted=false;
+    document.getElementById("on").style.display="block";
+    document.getElementById("off").style.display="none";
   }
   else {
-    document.getElementById("myVideo").muted=true
+    document.getElementById("myVideo").muted=true;
+    document.getElementById("on").style.display="none";
+    document.getElementById("off").style.display="block";
   }
 }
