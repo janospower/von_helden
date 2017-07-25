@@ -379,7 +379,7 @@ b{
   background: black;
 }
 .thumbnail:hover{
-  background: white;
+  background: white !important;
 }
 .thumbnail img {
   max-width: 100%;

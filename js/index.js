@@ -23,8 +23,18 @@ $(document).ready(function () {
 });
 
 function product(p){
-  alert(p);
-}
+  var ps = document.getElementsByClassName("thumbnail");
+  for (var i = 0; i < ps.length; i++) {
+    if (ps[i].id==p) {
+      document.getElementById(ps[i].id).style.background = "white";
+    }
+    else {
+      document.getElementById(ps[i].id).style.background = "black";
+    };
+  };
+
+
+};
 
 function disableMute() {
   if (document.getElementById("myVideo").muted==true) {
