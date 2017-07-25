@@ -321,6 +321,7 @@ video::-webkit-media-controls {
   float: left;
   margin-left: 32px;
   transform: translate(0,0px);
+  height: 847px;
 }
 .right{
   float: right;
@@ -328,7 +329,7 @@ video::-webkit-media-controls {
   transform: translate(0,0px);
 }
 
-.fp-viewing-Produkte-0 #p1div.left{
+.fp-viewing-Produkte-0 #p1div .left{
   transform: translate(0,-65px);
 }
 .fp-viewing-Produkte-0 #p1div .right{
