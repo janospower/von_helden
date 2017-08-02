@@ -178,6 +178,13 @@ body {
     font-family: 'Lato', Helvetica, Arial, sans-serif;
     margin: 0;
 }
+/*html, .item, .swrap, .section, .slide {
+  background-color: black;
+}*/
+
+.iScrollIndicator{
+  background-color: rgba(125, 125, 125, 0.8)!important;
+}
 
 a {
   text-decoration: none;
