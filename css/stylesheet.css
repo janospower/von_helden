@@ -522,6 +522,7 @@ video::-webkit-media-controls {
 .info{
   border-left: solid 1px black;
   margin-left: 50px;
+  max-width: 800px;
   margin-top: 0px;
   margin-right: 342px;
   margin-bottom: 0px;
