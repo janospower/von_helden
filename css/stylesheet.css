@@ -498,8 +498,11 @@ video::-webkit-media-controls {
 .fp-viewing-Produkte-0 .item .left{
   transform: translate(0,-65px);
 }
-.fp-viewing-Produkte-0 .item .right{
+.fp-viewing-Produkte-0 #p1div .right{
   transform: translate(0,230px);
+}
+.fp-viewing-Produkte-0 .item .right{
+  transform: translate(0,130px);
 }
 
 .clear{
@@ -562,7 +565,7 @@ b{
 }
 .hidden .right{
   /*max-width: 339px;*/
-  height: 775px;
+  height: 652px;
   /*width: 30%;*/
 }
 .text{
