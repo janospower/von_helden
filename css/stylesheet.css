@@ -495,10 +495,10 @@ video::-webkit-media-controls {
   transform: translate(0,0px);
 }
 
-.fp-viewing-Produkte-0 #p1div .left{
+.fp-viewing-Produkte-0 .item .left{
   transform: translate(0,-65px);
 }
-.fp-viewing-Produkte-0 #p1div .right{
+.fp-viewing-Produkte-0 .item .right{
   transform: translate(0,230px);
 }
 
@@ -556,13 +556,13 @@ b{
   display: none;
 }
 .hidden .left{
-  max-width: 478px;
-  max-height: 847px;
+  /*max-width: 478px;*/
+  height: 847px;
   /*width: 30%;*/
 }
 .hidden .right{
-  max-width: 339px;
-  max-height: 775px;
+  /*max-width: 339px;*/
+  height: 775px;
   /*width: 30%;*/
 }
 .text{
