@@ -17,7 +17,10 @@
   column-gap:20px;
   font-size: 12px;
 }
-.col h1,h2,h3{
+.col h1{
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+}
+.col h2{
   font-family: 'Lato', Helvetica, Arial, sans-serif;
 }
 
