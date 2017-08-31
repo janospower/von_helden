@@ -64,6 +64,13 @@
   min-height: 100%;
   margin-top: calc(14vw + 4px);
 }
+.infolist{
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.infolist li{
+  display: list-item;
+}
 
 
 @keyframes noise-anim {
