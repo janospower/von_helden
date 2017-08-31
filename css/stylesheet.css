@@ -8,6 +8,20 @@
   margin: 0 auto;
 }
 
+.col{
+  -webkit-column-count: 4;
+  -webkit-column-gap: 20px;
+  -moz-column-count: 4;
+  -moz-column-gap: 20px;
+  column-count:4;
+  column-gap:20px;
+  font-size: 12px;
+}
+.col h1,h2,h3{
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+}
+
+
 @keyframes noise-anim {
   0% {
     clip: rect(16px, 9999px, 62px, 0);
@@ -207,6 +221,9 @@ h3 {
 }
 h1 {
   font-size: 18px;
+}
+h2{
+  font-size: 12px;
 }
 
 #header{
