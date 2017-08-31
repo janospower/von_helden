@@ -12,6 +12,8 @@
   margin-left: 200px;
   margin-right: 120px;
   margin-bottom: 50px;
+  /*overflow: hidden;*/
+  display: flex;
 }
 .col{
   -webkit-column-count: 4;
@@ -21,6 +23,7 @@
   column-count:4;
   column-gap:20px;
   font-size: 12px;
+  padding-left: 20px;
 }
 .col h1{
   font-family: 'Lato', Helvetica, Arial, sans-serif;
@@ -32,12 +35,11 @@
   margin-top: 100px;
 }
 .leftline{
-  position: absolute;
-  top: 254px;
-  left: 180px;
+  flex: 1;
   border-left: 1px solid black;
-  width: 1px;
-  bottom: 50px;
+  width: 20px;
+min-height: 100%;
+  margin-top: 104px;
 }
 
 
