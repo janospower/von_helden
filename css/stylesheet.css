@@ -14,7 +14,6 @@
   margin-bottom: 50px;
 }
 .col{
-  float: right;
   -webkit-column-count: 4;
   -webkit-column-gap: 20px;
   -moz-column-count: 4;
@@ -33,11 +32,12 @@
   margin-top: 100px;
 }
 .leftline{
-  float: left;
+  position: absolute;
+  top: 254px;
+  left: 180px;
+  border-left: 1px solid black;
   width: 1px;
-  background-color: black;
-  height: 100%;
-  margin-top: 100px;
+  bottom: 50px;
 }
 
 
