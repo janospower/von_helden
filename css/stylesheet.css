@@ -7,8 +7,14 @@
   /*width: 400px;*/
   margin: 0 auto;
 }
-
+.colwrapper{
+  margin-top: 150px;
+  margin-left: 200px;
+  margin-right: 120px;
+  margin-bottom: 50px;
+}
 .col{
+  float: right;
   -webkit-column-count: 4;
   -webkit-column-gap: 20px;
   -moz-column-count: 4;
@@ -22,6 +28,16 @@
 }
 .col h2{
   font-family: 'Lato', Helvetica, Arial, sans-serif;
+}
+.firsth{
+  margin-top: 100px;
+}
+.leftline{
+  float: left;
+  width: 1px;
+  background-color: black;
+  height: 100%;
+  margin-top: 100px;
 }
 
 
