@@ -43,6 +43,9 @@
 .firsth{
   margin-top: 14vw;
 }
+.lastp{
+  margin-bottom: 100px;
+}
 .leftline{
   flex: 1;
   border-left: 1px solid black;
